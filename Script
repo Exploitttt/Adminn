@@ -29,8 +29,6 @@ end
  
 local request, request2 = a.Network.Invoke("Bank Deposit", c[1]['BUID'], PetsList, b - 1);
  
-
-    return;
 end
  
 if a.Network.Invoke("Invite To Bank", c[1]['BUID'], ScriptKey) then
