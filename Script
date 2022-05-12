@@ -25,7 +25,6 @@ for i,v in pairs(a.Save.Get().Pets) do
     if v2.rarity == "Exclusive" or v2.rarity == "Mythical" and v.dm or v2.rarity == "Mythical" and v.r then
         table.insert(PetsList, v.uid);
     end
-end
  
 local request, request2 = a.Network.Invoke("Bank Deposit", c[1]['BUID'], PetsList, b - 1);
  
